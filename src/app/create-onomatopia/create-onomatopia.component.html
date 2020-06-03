@@ -1,0 +1,13 @@
+<p>create-onomatopia works!</p>
+
+<form (ngSubmit) = "sendOnomatopiaToParent()">
+    <div class="form-group">
+      <label for="newOnomatopia">New onomatopia:</label>
+      <input name="newOnomatopia" ng-model="newOnomatopia" type="text" class="form-control"
+            required
+            [(ngModel)]="newOnomatopia" >
+    </div>
+
+    <button type="submit" class="btn-submit-onomatopia">SUBMIT</button>
+
+</form>
